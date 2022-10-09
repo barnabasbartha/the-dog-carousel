@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .skeleton-loading {
+        background-image: linear-gradient(to right, rgba(233, 233, 233, .45) 0%, rgba(248, 248, 248, .42) 99%),
+        linear-gradient(to right, rgba(228, 228, 228, .5) 0%, rgba(233, 233, 233, .5) 99%);
+        background-size: 200%;
+        color: transparent !important;
+    }
+
+    .skeleton-loading:not(.skeleton-error) {
+        animation: loading 1s infinite ease-out;
+    }
+
+    @keyframes loading {
+        0% {
+            background-position: 0;
+        }
+        100% {
+            background-position: -200%;
+        }
+    }
+
+    .skeleton-loading:before {
+        content: '.';
+    }
+}
