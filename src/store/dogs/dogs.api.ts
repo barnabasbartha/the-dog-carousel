@@ -2,7 +2,7 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 import {Dog, DogsApiResponse} from './dogs.model';
 import {dogsWithImage, mapDogResponseWithImage} from './dogs.utils';
 
-const useMockApi = true;
+const useMockApi = false;
 
 export const dogsApi = createApi({
   reducerPath: 'dogs',
