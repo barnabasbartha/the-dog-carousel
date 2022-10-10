@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build
+    name: 🔧 Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -31,7 +31,7 @@ jobs:
           name: build
           path: build
   deploy:
-    name: Deploy
+    name: 🚀 Deploy
     needs: [ build ]
     runs-on: ubuntu-latest
     steps:
@@ -40,9 +40,9 @@ jobs:
         with:
           name: build
           path: build
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: build
