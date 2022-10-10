@@ -15,7 +15,8 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more
+information.
 
 ### `yarn build`
 
@@ -32,3 +33,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 Run `yarn run json-server:delay` `json-server` to fake an API with optional built-in delay.
 
 Also set `useMockApi = true` in `src/store/dogs/dogs.api.ts:5` !
+
+### Storybook
+
+Run `yarn run storybook` to test components in different states.
