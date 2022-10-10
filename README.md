@@ -1,5 +1,7 @@
 # The Dog Carousel
 
+[Online Demo (Github Pages)](https://barnabasbartha.github.io/the-dog-carousel/)
+
 ## Available Scripts
 
 In the project directory, you can run:
