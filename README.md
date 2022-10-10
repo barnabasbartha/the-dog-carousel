@@ -26,3 +26,9 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Mock API
+
+Run `yarn run json-server:delay` `json-server` to fake an API with optional built-in delay.
+
+Also set `useMockApi = true` in `src/store/dogs/dogs.api.ts:5` !

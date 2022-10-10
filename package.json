@@ -6,7 +6,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "json-server:no-delay": "json-server -p 5000 mock_api/server.js --routes mock_api/routes.json",
+    "json-server:delay": "json-server -p 5000 mock_api/server.js --routes mock_api/routes.json --middlewares mock_api/middleware/delay.middleware.js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
@@ -19,6 +21,8 @@
     "@types/react-dom": "^18.0.0",
     "eslint": "8.22.0",
     "eslint-plugin-react": "^7.31.8",
+    "http-proxy-middleware": "^2.0.6",
+    "json-server": "^0.17.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.4",
