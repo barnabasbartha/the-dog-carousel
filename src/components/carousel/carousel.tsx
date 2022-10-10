@@ -69,9 +69,9 @@ const CarouselSlide = ({children}: { children: ReactNode }) =>
 const CarouselSelector = ({active, isLoaded}: { active: boolean, isLoaded: boolean }) =>
   <div className="relative flex justify-center items-center w-[29px] h-[29px] justify-center items-start">
     <span
-      className={`absolute rounded-full w-full h-full border border-[1.5px] ${isLoaded ? 'border-[#FF816A]' : 'border-[#A2BED5]'} ${active ? 'scale-100' : 'scale-0'} transition-all duration-200`}/>
+      className={`absolute rounded-full w-full h-full border border-[1.5px] ${isLoaded ? 'border-[#FF816A]' : 'border-[#DDDDDD]'} ${active ? 'scale-100' : 'scale-0'} transition-all duration-200`}/>
     <span
-      className={`absolute rounded-full w-[5px] h-[5px] ${active && isLoaded ? 'bg-[#FF816A]' : 'bg-[#A2BED5]'}`}/>
+      className={`absolute rounded-full w-[5px] h-[5px] ${active && isLoaded ? 'bg-[#FF816A]' : isLoaded ? 'bg-[#CACACA]' : 'bg-[#DDDDDD]'}`}/>
   </div>;
 
 const ImageFallback = ({isLoading, isError}: { isLoading: boolean, isError: boolean }) => <div
