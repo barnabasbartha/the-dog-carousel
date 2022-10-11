@@ -39,9 +39,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: .
+          path: build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          token: ${{ secrets.DEPLOY_PAGES }}
-          folder: .
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
